@@ -20,7 +20,6 @@ for song_file in song_files:
     song_path = os.path.join(songs_directory, song_file)
     playlist.append(song_path)
 
-# Loop through the playlist and play each song
 for song_path in playlist:
     print("מנגן כעת: "+ get_song_name(song_path))
     playsound(song_path)
